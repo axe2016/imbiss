@@ -17,6 +17,7 @@
 \usepackage{enumitem}
 
 \usepackage{tabularx}
+\usepackage{ltablex}
 \usepackage{array}
 \usepackage{multirow}
 
@@ -90,55 +91,83 @@ Gröbenzell
    >{\raggedright\arraybackslash}X 
    >{\raggedleft\arraybackslash}s  }
 
-  1 & Pekingsuppe\footnote{mit Geschmacksverstärker;\label{fn1}} \linebreak \emph{sharf-sauer} & €3,40 \\
+  1 & Pekingsuppe
+    \footnote{mit Geschmacksverstärker\label{fn1}} 
+    \linebreak \small\emph{sharf-sauer} & €3,40 \\
 
- 2  & Wantan-Suppe\footref{fn1} \footnote{Enthält glutenhaltige/s Getreide/-Erzeugnisse;\label{fn2}} \linebreak \emph{chinesische Maultaschen mit Fleisch} & €3,50  \\
- 
+ 2  & Wantan-Suppe
+    \footref{fn1} 
+    \footnote{Enthält glutenhaltige/s Getreide/-Erzeugnisse\label{fn2}} 
+    \footnote{Enthält Ei/-Erzeugnisse\label{fn3}}
+    \footnote{Weizen\label{fn4}}
+    \linebreak \small\emph{chinesische Maultaschen mit Fleisch} & €3,50  \\
+
+ 3 & Gemüsesuppe
+    \footref{fn1}
+    \linebreak \small\emph{mit Glasnudeln} & €3,20 \\
+
+  4 & Hühnerfleischsuppe
+    \footref{fn1}
+    \linebreak \small\emph{mit Glasnudeln} & €3,40 \\
+
+  5 & Entenfleischsuppe
+    \footref{fn1}
+    \linebreak \small\emph{mit Glasnudeln} & €3,90 \\
+
+  6 & Maissuppe
+    \footref{fn1}
+    \linebreak \small\emph{mit Hühnerfleisch} & €3,40 \\
+
+  7 & Tom Yam Gai
+    \footref{fn1}
+    \footnote{Enthält Krebstiere/-Erzeugnisse\label{fn5}}
+    \footnote{Enthält Fisch/-Erzeugnisse\label{fn6}}
+    \linebreak \small\emph{thailändische Hühnerfleischsuppe, scharf} & €3,80 \\
+
+  8 & Tom Yam Gung
+    \footref{fn1}
+    \footref{fn5}
+    \footref{fn6}
+    \linebreak \small\emph{thailändische Garnelensuppe, scharf} & €4,80 \\
+    
+  9 & Miso-Suppe
+    \footref{fn1}
+    \footnote{Enthält Sojabohnen/-Erzeugnisse\label{fn7}}
+    \linebreak \small\emph{Japanische Sojabohnenpaste-Suppe mit Seetang und Tofu} & €3,80 \\
+\end{tabularx}
+
+%========================= Vorspeisen =================
+\section{Vorspeisen}
+
+\begin{tabularx}{1.0\textwidth} { 
+   >{\raggedright\arraybackslash}o
+   >{\raggedright\arraybackslash}X 
+   >{\raggedleft\arraybackslash}s  }
+
+   10 & Frühlingsrolle
+   \footref{fn1} \footref{fn2} \footref{fn4} 
+   \footnote{Enthält Milch/-Erzeugnisse (laktosehaltig)\label{fn8}}
+   \linebreak \small\emph{mit Hühnerfleisch und Gemüse, 2 Stück} & €3,40 \\
+
+   11 & Mini-Frühlingsrollen
+   \footref{fn1} \footref{fn2} \footref{fn4} \footref{fn8}
+   \linebreak \small\emph{vegetarisch mit süß-scharfer Sauce, 6 Stück} & €3,00 \\
+
+   12 & Popiah
+   \footref{fn1} \footref{fn2} \footref{fn3} \footref{fn4} \footref{fn7} 
+   \footnote{Enthält Sellerie/-Erzeugnisse\label{fn9}}
+   \footnote{Enthält Sesamsamen/-Erzeugnisse\label{fn10}}
+   \footnote{Enthält Schwefeldioxid/Sulfite\label{fn11}}
+   \linebreak \small\emph{vietnamesische Reispapier-Frühlingsrollen mit süß-scharf Sauce, 3 Stück} 
+   & €3,80 \\
+
 \end{tabularx}
 
 % ================ continue ===============
-\begin{enumerate}[itemsep=0mm,leftmargin=*]
 
-\item Vérifiez que vos photos ne sont pas déjà dans la galerie.
-\item Cliquez sur \textbf{Ajoutez des photos}.
-  \end{enumerate}
-\begin{center}
-\setlength{\fboxsep}{0pt}%
-\setlength{\fboxrule}{0pt}%
-\fbox{\includegraphics[angle=5,width=\linewidth]{piwigo-ajouter-photos}}%
-\end{center}
-  \begin{enumerate}
-  \setcounter{enumi}{2}
-\item Ajoutez vos photos et démarrez le transfert.
 
-  Vos photos sont dans l'album \emph{Community}. Elles seront classées par un iconographe.
-  
-\end{enumerate}
+  % \vspace*{\fill}
 
-  \vspace*{\fill}
-
-  \fcolorbox{black}{white}{
-  \begin{minipage}[t]{1.0\textwidth}
-
-    \section{\faEye Soyez sélectifs}
-
-      Nous avons déjà plus de 6000 photos, dont beaucoup se ressemblent (les
-      fêtes, ça fait de chouettes photos, mais difficilement utilisables sur
-      une affiche\ldots). Privilégiez donc :
-
-      \begin{itemize}
-      \item les sujets ou les traitements originaux;
-      \item les gros plans;
-      \item le temps couvert;
-      \item le flou d'arrière-plan;
-      \item les fichiers de plus de 2 Mo;
-      \item les  scans d'argentique ou d'illustrations;
-      \item les boîtiers \emph{reflex}.
-      \end{itemize}
-      
-  \end{minipage}
-    }
-    \vspace*{\fill}
 \clearpage
 
 \section{\faTag Iconographes}
@@ -158,22 +187,7 @@ Gröbenzell
 
   \item Pour que la photo soit supprimée, indiquez \emph{Delete}.  Elle sera
     effacée plus tard
-    % \footnote{1) mit Geschmacksverstärker; 2) Enthält glutenhaltige/s Getreide/-Erzeugnisse; 3) Enthält Ei/-Erzeugnisse; 4) Enthält Sojabohnen/-Erzeugnisse; 5) Enthält Sellerie/-Erzeugnisse; 6) Weizen; 7) Enthält Milch/-Erzeugnisse (laktosehaltig); 8) Enthält Sesamsamen/-Erzeugnisse; 9) Enthält Schwefeldioxid/Sulfite; 10) Enthält Erdnüsse/-Erzeugnisse; 11) Enthält Krebstiere/-Erzeugnisse; 12) Enthält Weichtiere/-Erzeugnisse; 13) Enthält Fisch/-Erzeugnisse; 14) Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse; 15) Gerste}.
-    \footnote{mit Geschmacksverstärker;}
-    \footnote{Enthält glutenhaltige/s Getreide/-Erzeugnisse;}
-    \footnote{Enthält Ei/-Erzeugnisse;}
-    \footnote{Enthält Sojabohnen/-Erzeugnisse;}
-    \footnote{Enthält Sellerie/-Erzeugnisse;}
-    \footnote{Weizen;}
-    \footnote{Enthält Milch/-Erzeugnisse (laktosehaltig);}
-    \footnote{Enthält Sesamsamen/-Erzeugnisse;}
-    \footnote{Enthält Schwefeldioxid/Sulfite;}
-    \footnote{Enthält Erdnüsse/-Erzeugnisse; }
-    \footnote{Enthält Krebstiere/-Erzeugnisse;}
-    \footnote{Enthält Weichtiere/-Erzeugnisse;}
-    \footnote{Enthält Fisch/-Erzeugnisse;}
-    \footnote{Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse;}
-    \footnote{Gerste;}
+
   \end{itemize}
 \end{enumerate}
   
