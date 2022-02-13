@@ -1,0 +1,15 @@
+1 1) mit Geschmacksverstärker; 
+2 2) Enthält glutenhaltige/s Getreide/-Erzeugnisse; 
+3 3) Enthält Ei/-Erzeugnisse; 
+7 4) Enthält Sojabohnen/-Erzeugnisse; 
+9 5) Enthält Sellerie/-Erzeugnisse; 
+4 6) Weizen; 
+8 7) Enthält Milch/-Erzeugnisse (laktosehaltig); 
+10 8) Enthält Sesamsamen/-Erzeugnisse; 
+11 9) Enthält Schwefeldioxid/Sulfite; 
+12 10) Enthält Erdnüsse/-Erzeugnisse; 
+5 11) Enthält Krebstiere/-Erzeugnisse; 
+6 12) Enthält Weichtiere/-Erzeugnisse; 
+13 13) Enthält Fisch/-Erzeugnisse; 
+14 14) Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse; 
+15) Gerste;
