@@ -15,6 +15,13 @@
 \usepackage{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
+
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+
+\usepackage[para]{footmisc}
+
 \setitemize{label=--}
 \setenumerate[1]{label=\textcircled{\scriptsize\arabic*},
   font=\sffamily}
@@ -41,7 +48,7 @@
 \end{center}
 
 \section{Öffnungszeitun:}
-\begin{tabular}{lp{7.3cm}}
+\begin{tabular}{lp{8.3cm}}
   Montag & \emph{von} 11:30 \emph{bis} 21:30 \\
   Dienstag & Ruhetag \\
   Mittwoch & \emph{von} 11:30 \emph{bis} 21:30 \\
@@ -52,14 +59,13 @@
 \end{tabular}
 
 \section{Mindestbestellwert:}
-\begin{tabular}{lp{7.3cm}}
+\begin{tabular}{lp{8.3cm}}
   Ort & Preis \\
   % \cmidrule(r){1-2}
   Gröbenzell & ab €10,- \\
   Puchheim & ab €10,- \\
   Andere Orte & ab €16,-
 \end{tabular}
-
 
 \section{Telefonnummer:}
 08143 4101910
@@ -73,10 +79,21 @@ Gröbenzell
 \end{center}
 
 \clearpage
-\section{\faCamera Photographes}
+\section{Suppen}
 
-\vspace*{\fill}
+\newcolumntype{s}{>{\hsize=.2\hsize}X}
+\begin{tabularx}{1.0\textwidth} { 
+   >{\hsize=.1\hsize}X 
+   >{\raggedright\arraybackslash}X 
+   >{\raggedleft\arraybackslash}s  }
 
+ 1 & Pekingsuppe & €3,40 \\
+
+ 2  & cell5  & cell6  \\
+
+\end{tabularx}
+
+% ================ continue ===============
 \begin{enumerate}[itemsep=0mm,leftmargin=*]
 
 \item Vérifiez que vos photos ne sont pas déjà dans la galerie.
@@ -137,7 +154,23 @@ Gröbenzell
     dans le cas contraire.
 
   \item Pour que la photo soit supprimée, indiquez \emph{Delete}.  Elle sera
-    effacée plus tard\footnote{Elle sera conservée dans la sauvegarde.}.
+    effacée plus tard
+    % \footnote{1) mit Geschmacksverstärker; 2) Enthält glutenhaltige/s Getreide/-Erzeugnisse; 3) Enthält Ei/-Erzeugnisse; 4) Enthält Sojabohnen/-Erzeugnisse; 5) Enthält Sellerie/-Erzeugnisse; 6) Weizen; 7) Enthält Milch/-Erzeugnisse (laktosehaltig); 8) Enthält Sesamsamen/-Erzeugnisse; 9) Enthält Schwefeldioxid/Sulfite; 10) Enthält Erdnüsse/-Erzeugnisse; 11) Enthält Krebstiere/-Erzeugnisse; 12) Enthält Weichtiere/-Erzeugnisse; 13) Enthält Fisch/-Erzeugnisse; 14) Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse; 15) Gerste}.
+    \footnote{mit Geschmacksverstärker;}
+    \footnote{Enthält glutenhaltige/s Getreide/-Erzeugnisse;}
+    \footnote{Enthält Ei/-Erzeugnisse;}
+    \footnote{Enthält Sojabohnen/-Erzeugnisse;}
+    \footnote{Enthält Sellerie/-Erzeugnisse;}
+    \footnote{Weizen;}
+    \footnote{Enthält Milch/-Erzeugnisse (laktosehaltig);}
+    \footnote{Enthält Sesamsamen/-Erzeugnisse;}
+    \footnote{Enthält Schwefeldioxid/Sulfite;}
+    \footnote{Enthält Erdnüsse/-Erzeugnisse; }
+    \footnote{Enthält Krebstiere/-Erzeugnisse;}
+    \footnote{Enthält Weichtiere/-Erzeugnisse;}
+    \footnote{Enthält Fisch/-Erzeugnisse;}
+    \footnote{Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse;}
+    \footnote{Gerste;}
   \end{itemize}
 \end{enumerate}
   
@@ -165,6 +198,8 @@ Gröbenzell
   \end{itemize}
 \end{itemize}
 \vspace*{\fill}
+
+
 \clearpage
 
 \section{\faPaintBrush Graphistes}
