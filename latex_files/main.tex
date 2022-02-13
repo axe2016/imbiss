@@ -3,7 +3,7 @@
 \documentclass[12pt,nofoldmark,notumble]{leaflet}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
 \usepackage{libertine}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{microtype}
@@ -19,6 +19,9 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{multirow}
+
+\newcolumntype{o}{>{\hsize=.05\hsize}X}
+\newcolumntype{s}{>{\hsize=.2\hsize}X}
 
 \usepackage[para]{footmisc}
 
@@ -79,18 +82,18 @@ Gröbenzell
 \end{center}
 
 \clearpage
+
 \section{Suppen}
 
-\newcolumntype{s}{>{\hsize=.2\hsize}X}
 \begin{tabularx}{1.0\textwidth} { 
-   >{\hsize=.1\hsize}X 
+   >{\raggedright\arraybackslash}o
    >{\raggedright\arraybackslash}X 
    >{\raggedleft\arraybackslash}s  }
 
- 1 & Pekingsuppe & €3,40 \\
+  1 & Pekingsuppe\footnote{mit Geschmacksverstärker;\label{fn1}} \linebreak \emph{sharf-sauer} & €3,40 \\
 
- 2  & cell5  & cell6  \\
-
+ 2  & Wantan-Suppe\footref{fn1} \footnote{Enthält glutenhaltige/s Getreide/-Erzeugnisse;\label{fn2}} \linebreak \emph{chinesische Maultaschen mit Fleisch} & €3,50  \\
+ 
 \end{tabularx}
 
 % ================ continue ===============
