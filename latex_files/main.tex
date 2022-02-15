@@ -426,34 +426,34 @@ Innerhalb 5 km ab 15 €
    >{\raggedleft\arraybackslash}s}
 
    70 & Verschiedenes Gemüse
-   \linebreak \small\emph{mit Glasnudeln} 
+  %  \linebreak \small\emph{mit Glasnudeln} 
    & €8,80 \\
 
    71 & Gemüse Gong Bao
    \footref{fn14}
-   \linebreak \small\emph{mit Cashewnüssen, scharf} 
+  %  \linebreak \small\emph{mit Cashewnüssen, scharf} 
    & €8,80 \\
 
    72 & Gemüse mit Thai-Rotcurry
-   \linebreak \small\emph{mit Kokosmilch, scharf} 
+  %  \linebreak \small\emph{mit Kokosmilch, scharf} 
    & €8,80 \\
 
    73 & Gemüse mit Tofu
    \footref{fn7}
-   \linebreak \small\emph{mit scharf-saurer Sauce} 
+  %  \linebreak \small\emph{mit scharf-saurer Sauce} 
    & €8,80 \\
 
    74 & Gemüse mit Chili
-   \linebreak \small\emph{mit Knoblauch und Ingwer, sehr scharf} 
+  %  \linebreak \small\emph{mit Knoblauch und Ingwer, sehr scharf} 
    & €8,80 \\
 
    75 & Gemüse mit süß-saurer Sauce
-   \linebreak \small\emph{paniert gebacken} 
+  %  \linebreak \small\emph{paniert gebacken} 
    & €8,80 \\
 
    76 & Gemüse mit Erdnuss-Sauce
    \footref{fn12}
-   \linebreak \small\emph{paniert gebacken} 
+  %  \linebreak \small\emph{paniert gebacken} 
    & €8,80 \\
 
    77 & Gebratene Nudeln mit Gemüse
@@ -621,6 +621,10 @@ Innerhalb 5 km ab 15 €
 \end{tabularx}
 %========================= Getränke =================
 \section{Getränke}
+
+\renewcommand{\thefootnote}{\textit{\alph{footnote}}}
+\setcounter{footnote}{0}
+
 \begin{tabularx}{1.0\textwidth} { 
   >{\raggedright\arraybackslash}o
   >{\raggedright\arraybackslash}X 
@@ -635,28 +639,28 @@ Innerhalb 5 km ab 15 €
   & €2,40 
   & 0,5l
   & €1,70 \\
-  101 & Coca Cola\footnote{enthält Koffein\label{fn16}}\footnote{mit Farbstoff\label{fn17}} 
-  oder Cola lighta\footnote{mit Süßungsmittel\label{fn18}}
+  101 & Coca Cola\footnote{enthält Koffein\label{fna}}\footnote{mit Farbstoff\label{fnb}} 
+  oder Cola lighta\footnotemark[1]\footnotemark[2]\footnote{mit Süßungsmittel\label{fnc}}
   % \linebreak 
   % \small\emph{1 Liter inkl. Pfand} 
   & €2,60 
   & 0,5l
   & €1,90 \\
-  102 & Fanta \footnote{mit Antioxidationsmittel\label{fn19}}
-  % \linebreak 
-  % \small\emph{1 Liter inkl. Pfand} 
+  102 & Fanta\footnotemark[2]\footnote{mit Antioxidationsmittel\label{fnd}}
+  \linebreak 
+  \small\emph{1 Liter inkl. Pfand} 
   & €2,60 
   & 0,5l
   & €1,90 \\
-  103 & Mezzo Mix (Spezi) \footnote{mit Antioxidationsmittel\label{fn19}}
-  % \linebreak 
-  % \small\emph{1 Liter inkl. Pfand} 
+  103 & Mezzo Mix (Spezi)\footnotemark[1]\footnotemark[2]
+  \linebreak 
+  \small\emph{1 Liter inkl. Pfand} 
   & €2,60 
   & 0,5l
   & €1,90 \\
-  104 & Sprite
-  % \linebreak 
-  % \small\emph{1 Liter inkl. Pfand} 
+  104 & Sprite\footnote{mit Säurungsmittel\label{fne}}
+  \linebreak 
+  \small\emph{1 Liter inkl. Pfand} 
   & €2,60 
 \\
   105 & Apfelsaft hohesC
@@ -679,9 +683,9 @@ Innerhalb 5 km ab 15 €
 \small\emph{1 Liter} 
 & €3,50 
 \\
-109 & Eistee Arizona Green Tead
-% \linebreak 
-% \small\emph{0,5 Liter inkl. Pfand} 
+109 & Eistee Arizona Green Tead\footnotemark[4]
+\linebreak 
+\small\emph{0,5 Liter inkl. Pfand} 
 & €2,80 
 \\
   110 & Apfelschorle Adelholzener
